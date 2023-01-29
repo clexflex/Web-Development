@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,11 +19,11 @@
                 </div>
                 <div class="field-input">
                     <div class="input-div">
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" required>
                         <div class="help-text" id="first-name-help">First Name</div>
                     </div>
                     <div class="input-div">
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" required>
                         <div class="help-text" id="last-name-help">Last Name</div>
                     </div>
                 </div>
@@ -34,11 +35,11 @@
                 </div>
                 <div class="field-input">
                     <div class="input-div">
-                        <input type="tel" name="mobile" id="mobile">
+                        <input type="tel" name="mobile" id="mobile" required>
                         <div class="help-text">Mobile Number</div>
                     </div>
                     <div class="input-div">
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                         <div class="help-text">Email Address</div>
                     </div>
                 </div>
@@ -50,42 +51,112 @@
                 </div>
                 <div class="field-input">
                     <div class="input-div">
-                       <input type="radio" name="male" id="male">
-                       <div class="help-text">Male</div>
+                        <input type="radio" name="male" id="male">
+                        <div class="help-text">Male</div>
                     </div>
                     <div class="input-div">
-                       <input type="radio" name="female" id="female">
-                       <div class="help-text">Female</div>
+                        <input type="radio" name="female" id="female">
+                        <div class="help-text">Female</div>
                     </div>
                     <div class="input-div">
-                       <input type="radio" name="other" id="other">
-                       <div class="help-text">Other</div>
+                        <input type="radio" name="other" id="other">
+                        <div class="help-text">Other</div>
                     </div>
-                    
-                </div>
-            </div>
-            
-            <div class="form-control">
-                <div class="heading-field">
-                    <h3>Personal Details</h3>
-                </div>
-                <div class="field-input">
-                    <div class="input-div">
-                       <input type="radio" name="male" id="male">
-                       <div class="help-text">Male</div>
-                    </div>
-                    <div class="input-div">
-                       <input type="radio" name="female" id="female">
-                       <div class="help-text">Female</div>
-                    </div>
-                    <div class="input-div">
-                       <input type="radio" name="other" id="other">
-                       <div class="help-text">Other</div>
-                    </div>
-                    
+
                 </div>
             </div>
 
+            <div class="form-control">
+                <div class="heading-field">
+                    <h3>Address</h3>
+                </div>
+                <div class="field-input">
+                    <div class="input-div">
+                        <input type="text" name="street-1" id="street-1" required>
+                        <div class="help-text">Street Address</div>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" name="street-2" id="street-2">
+                        <div class="help-text">Street Address 2</div>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" name="city" id="city" required>
+                        <div class="help-text">City</div>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" name="state" id="state" required>
+                        <div class="help-text">State</div>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" name="country" id="country" required>
+                        <div class="help-text">country</div>
+                    </div>
+                    <div class="input-div">
+                        <input type="number" name="zip" id="zip" required>
+                        <div class="help-text">Zip Code</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="form-control">
+                <div class="heading-field">
+                    <h3>Rating</h3>
+                </div>
+                <div class="field-input">
+                    <div class="input-div">
+                        <h5>Design</h5>
+                        <div>
+                            <input type="radio" name="design" id="bad">
+                            <label for="bad">Bad</label>
+                            <input type="radio" name="design" id="good">
+                            <label for="good">Good</label>
+                            <input type="radio" name="design" id="excelent">
+                            <label for="excelent">Excelent</label>
+                        </div>
+                    </div>
+                    <div class="input-div">
+                        <h5>Price</h5>
+                        <div>
+                            <input type="radio" name="price" id="bad2">
+                            <label for="bad2">Bad</label>
+                            <input type="radio" name="price" id="good2">
+                            <label for="good2">Good</label>
+                            <input type="radio" name="price" id="excelent2">
+                            <label for="excelent2">Excelent</label>
+                        </div>
+                    </div>
+                    <div class="input-div">
+                        <h5>Overall</h5>
+                        <div>
+                            <input type="radio" name="overall" id="bad3">
+                            <label for="bad3">Bad</label>
+                            <input type="radio" name="overall" id="good3">
+                            <label for="good3">Good</label>
+                            <input type="radio" name="overall" id="excelent3">
+                            <label for="excelent3">Excelent</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-control">
+                <div class="heading-field">
+                    <h3>User Agreement</h3>
+                </div>
+                <div class="field-input">
+                    <div class="input-div">
+                        <input type="checkbox" name="Agreement" id="Agreement" required>
+                        <label for="Agreement">I accept the all terms and conditions for this form.</label>
+                    </div>
+
+
+                </div>
+            </div>
+            <button type="reset">Reset Info</button>
+            <button type="submit">Submit Form</button>
         </form>
 
     </div>
