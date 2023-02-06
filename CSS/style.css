@@ -1,0 +1,36 @@
+pre {
+    background-color: gainsboro;
+    padding: 10px 5px 10px;
+    margin-right: 300px;
+    margin-left: 300px;
+    text-align: left;
+    
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: initial;
+    text-align: center;
+}
+.heading {
+    text-align: center;
+    
+}
+
+.main {
+    text-align: center;
+}
+
+.main > ul {
+    list-style-type:none;    
+}
+p{
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+h3 {
+    color: azure;
+    background-color: blue;
+    margin-right: 300px;
+    margin-left: 300px;
+}

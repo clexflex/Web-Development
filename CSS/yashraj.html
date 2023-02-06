@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>CSS</h1>
+    </div>
+    <div class="main">
+        <h2>Types of CSS are</h2>
+        <ul>
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+        </ul>
+    </div>
+
+    <div class="type">
+        <div>
+            <h3>Inline CSS</h3>
+            <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain
+                any CSS property.</p>
+            <p>This is how can use inline css</p>
+            <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;body&gt;
+
+                    &lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;
+                    &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;   
+                </pre>
+        </div>
+        <h3>Internal css</h3>
+        <p>An internal style sheet may be used if one single HTML page has a unique style.
+
+            The internal style is defined inside the &lt;style&gt; element, inside the head section.</p>
+        <p>THis is how you can implement Internal CSS</p>
+
+        <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;style&gt;
+                                body {
+                                background-color: linen;
+                                }
+
+                                h1 {
+                                color: maroon;
+                                margin-left: 40px;
+                                }
+                    &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                    &lt;h1&gt;This is a heading&lt;/h1&gt;
+                    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+            </pre>
+    </div>
+    <div>
+        <h3>External CSS</h3>
+        <p>With an external style sheet, you can change the look of an entire website by changing just one file!
+
+            Each HTML page must include a reference to the external style sheet file inside the
+            &lt;link&gt; element, inside the head section.
+        </p>
+        <p>This is how you can implement</p>
+        <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;link rel="stylesheet" href="mystyle.css"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                    &lt;h1&gt;This is a heading&lt;/h1&gt;
+                    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+        </pre>
+    </div>
+</body>
+
+</html>
