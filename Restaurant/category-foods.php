@@ -191,7 +191,7 @@
     <!-- footer Section Starts Here -->
     <section class="footer">
         <div class="container text-center">
-            <p>All rights reserved. Designed By <a>Keshav Sharma</a> and <a>Krish Tak</a></p>
+        <p>All rights reserved. Designed By <a>YASHRAJ</a></p>
         </div>
     </section>
     <!-- footer Section Ends Here -->
